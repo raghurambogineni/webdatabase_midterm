@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: inline-block;
+}
+
+#bio h3{
+    padding-left: 60px;
+}
+
+header {
+    background-color: #6BFF6E;
+    padding: 10px 0;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-items li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav-link span {
+    margin-right: 8px;
+}
+
+/* Active link styling */
+.nav-link:hover,
+.nav-link.active {
+    background-color: #6BFF6E;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-items.active {
+        display: block;
+    }
+
+    .nav-items li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Profile Section */
+.profile-section {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.profile-info h2 {
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Profile Section for smaller screens */
+@media (max-width: 768px) {
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        order: -1; /* Move image on top */
+    }
+
+    .profile-info {
+        margin-top: 20px;
+    }
+}
+
+
+/* Papers Section */
+.papers-section {
+    padding: 40px;
+    background-color: #f0f8f9;
+}
+
+.papers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.paper-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.paper-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6BFF6E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.award-item {
+    background-color: #e6ffe6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Blogs Section */
+.blogs-section {
+    padding: 40px;
+    background-color: #f0f8f9;
+}
+
+.blogs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .blogs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blog-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Footer Section */
+footer {
+    background-color: #6BFF6E;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.footer-link {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 0 10%;
+    color: #000;
+}
+
